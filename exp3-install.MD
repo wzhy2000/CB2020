@@ -27,14 +27,21 @@ $ ./configure --prefix=/usr/local
 $ make
 $ make install
 
+apt install curl
+apt install lubcurl4-openssl-dev
 apt install boost
 apt install libtbb-dev
-apt install libcurl4-openssl-dev
 apt install libjemalloc-dev
 apt install libcereal-dev
 apt install libdivsufsort-dev
 apt install libgff-dev
+apt install staden
+apt install libstaden-read-dev
  
 wget https://github.com/COMBINE-lab/salmon/archive/v0.14.1.tar.gz
 
+wget https://github.com/oneapi-src/oneTBB/archive/2019_U1.tar.gz
+
+apt install libhts-dev
+apt install samtools
 
