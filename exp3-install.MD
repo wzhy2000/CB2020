@@ -1,6 +1,14 @@
+COpy the packages from Yangxiaochen's host
+
+cd /home
+rsync -rav --update --rsh=ssh cb2020@114.116.232.201:/home/workdir .
+ 
+password: kaobeionly
+rsync -rav --update --rsh=ssh cb2020@114.116.232.201:/home/ex3_data .
+
+
+
 wget https://github.com/trinityrnaseq/trinityrnaseq/releases/download/v2.8.6/trinityrnaseq-v2.8.6.FULL.tar.gz
-
-
 #https://github.com/trinityrnaseq/trinityrnaseq/issues/178
 #Remove -m64 in CMakefiles.txt
 #
@@ -44,4 +52,6 @@ wget https://github.com/oneapi-src/oneTBB/archive/2019_U1.tar.gz
 
 apt install libhts-dev
 apt install samtools
-
+apt install hmmer
+apt install rse
+apt install Augustus
