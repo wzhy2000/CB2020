@@ -1,6 +1,6 @@
 ## 1. Copy experiment data
 
-from Xiaochen Yang's host (password: kaobeionly)
+from Xiaochen Yang's host (password: ask me if dont know)
 
 ```
 cd /home
