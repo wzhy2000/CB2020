@@ -1,6 +1,6 @@
-## 1. Copy experiment data
+## 1. Experiment data
 
-from Xiaochen Yang's host (password: ask me if dont know)
+Copy from Xiaochen Yang's host (password: ask me if dont know)
 
 ```
 cd /home
@@ -10,7 +10,7 @@ rsync -rav --update --rsh=ssh cb2020@114.116.232.201:/home/ex4_data .
 
 ------OR------
 
-copy from Lirui Han
+Copy from Lirui Han
 ```
 cd home
 rsync -rav --update --rsh=ssh cb2020@121.36.105.149:/home/ex3_data .
@@ -94,16 +94,20 @@ BiocManager::install("DESeq2",version="3.9")
 
 1) copy codes from Xiaochen Yang's host
 
-  rsync -rav --update --rsh=ssh cb2020@114.116.232.201:/home/workdir .
+```
+rsync -rav --update --rsh=ssh cb2020@114.116.232.201:/home/workdir .
+```
 
 or copy codes from Lirui Han's host 
 
+```
   rsync -rav --update --rsh=ssh cb2020@121.36.105.149:/home/workdir .
+```
 
 2) build CMake 3.15.0
 
-  cmake .
-
-  make 
-
-  make install
+```
+cmake .
+make 
+make install
+```
