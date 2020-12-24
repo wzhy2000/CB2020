@@ -53,5 +53,5 @@ wget https://github.com/oneapi-src/oneTBB/archive/2019_U1.tar.gz
 apt install libhts-dev
 apt install samtools
 apt install hmmer
-apt install rse
+apt install rsem
 apt install Augustus
