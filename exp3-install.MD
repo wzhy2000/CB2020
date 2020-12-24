@@ -2,10 +2,14 @@ COpy the packages from Yangxiaochen's host
 
 cd /home
 rsync -rav --update --rsh=ssh cb2020@114.116.232.201:/home/workdir .
- 
-password: kaobeionly
 rsync -rav --update --rsh=ssh cb2020@114.116.232.201:/home/ex3_data .
+rsync -rav --update --rsh=ssh cb2020@114.116.232.201:/home/ex4_data .
 
+password: kaobeionly
+
+rsync -rav --update --rsh=ssh cb2020@121.36.105.149:/home/workdir .
+rsync -rav --update --rsh=ssh cb2020@121.36.105.149:/home/ex3_data .
+rsync -rav --update --rsh=ssh cb2020@121.36.105.149:/home/ex4_data .
 
 
 wget https://github.com/trinityrnaseq/trinityrnaseq/releases/download/v2.8.6/trinityrnaseq-v2.8.6.FULL.tar.gz
@@ -38,7 +42,7 @@ $ make install
 
 apt install curl
 apt install lubcurl4-openssl-dev
-apt install boost
+apt install libboost-all-dev
 apt install libtbb-dev
 apt install libjemalloc-dev
 apt install libcereal-dev
@@ -46,11 +50,7 @@ apt install libdivsufsort-dev
 apt install libgff-dev
 apt install staden
 apt install libstaden-read-dev
- 
-wget https://github.com/COMBINE-lab/salmon/archive/v0.14.1.tar.gz
-
-wget https://github.com/oneapi-src/oneTBB/archive/2019_U1.tar.gz
-
+apt install blast2
 apt install libhts-dev
 apt install samtools
 apt install hmmer
@@ -58,10 +58,17 @@ apt install rsem
 apt install augustus
 
 
+wget https://github.com/COMBINE-lab/salmon/archive/v0.14.1.tar.gz
+
+wget https://github.com/oneapi-src/oneTBB/archive/2019_U1.tar.gz
+
+
+
 # R packages
 if (!requireNamespace("BiocManager", quietly = TRUE))
     install.packages("BiocManager")
 
+BiocManager::install(version="3.6")
 BiocManager::install("Biobase",version="3.6")
 BiocManager::install("qvalue",version="3.6")
 install.package("fastcluster")
