@@ -57,7 +57,7 @@ gatk
 
 （6）如果有图形结果，请对图形做解释。
 
-![Tux, the Linux mascot](test.png)
+![图片示例](test.png)
 
     (a) 如果展示的图形是多图拼出来的，请对每个子图做出解释。
 
